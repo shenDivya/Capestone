@@ -17,7 +17,7 @@ CONSTRAINTS:->
  Provide only the SQL query with column aliases clearly labeled.
 
  AI Responses Query
-
+''' SQL
 SELECT 
     p.product_id,
     p.product_name,
