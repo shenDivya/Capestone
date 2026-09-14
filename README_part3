@@ -1,0 +1,64 @@
+BigBasket Data Analysis Capstone Project
+
+Project Overview
+
+This project analyzes BigBasket sales data to understand sales performance, customer and product information, category-wise revenue, and overall business performance. The project uses SQL, Excel, and Tableau to clean, analyze, and present the data. The analysis includes database creation, SQL queries, spreadsheet analysis, and an interactive Tableau dashboard. The main goal is to identify which product categories are performing above or below their revenue targets and provide useful recommendations for the category team.
+
+Repository Structure
+
+The main files in this repository are:
+
+Capestone/
+│
+├── generate_data.py
+├── bigbasket_capstone.db
+├── orders_raw.csv
+├── products.csv
+│
+├── 01_foundations.sql
+├── 02_aggregation_joins.sql
+├── 03_reporting.sql
+├── verify.sql
+├── monthly_category_revenue.csv
+├── ai_log.md
+│
+├── bigbasket_analysis.xlsx
+└── README.md
+
+How to Regenerate the Database and Raw Exports
+
+The database and raw data files are generated using the generate_data.py script. The script creates a new SQLite database called bigbasket_capstone.db and generates the raw CSV files orders_raw.csv and products.csv.
+To regenerate the files, open a terminal in the project folder and run:
+python generate_data.py
+The script will recreate the database and generate the following files:
+bigbasket_capstone.db – SQLite database containing the project tables and data.
+orders_raw.csv – Raw order data used for the Python/Pandas analysis. The data intentionally contains some missing values, duplicate rows, inconsistent text formatting, and outliers for the data-cleaning tasks.
+products.csv – Product information including product name, category, supplier, and unit price.
+The complete data-generation process can be found in generate_data.py.
+
+SQL Analysis
+
+The SQL tasks are divided into three files:
+
+01_foundations.sql – Contains the foundation SQL tasks, including basic queries and table-level analysis.
+02_aggregation_joins.sql – Contains aggregation and JOIN-based analysis.
+03_reporting.sql – Contains reporting and business-focused SQL queries.
+verify.sql – Contains queries used to verify the database and results.
+
+the spreadsheet workbooks filename:-
+Monthly Data
+Category Tragets
+Pivot Table
+Category Summary
+
+the live Tableau Public dashboard link
+[tableau](https://public.tableau.com/app/profile/divyajoti.shen/viz/bigbasket_tableu/Dashboard1)
+
+a pointer to the data story, a pointer to ai_log.md
+
+The ai_log.md file contains the prompts and AI-assisted responses used during the project. It documents the use of AI for SQL query development and Python/Pandas data-cleaning tasks, including the product-level order count query and the treatment of outliers in the amount_inr column.
+
+ a pointer to your Part 4 notebook.
+
+Part 4 contains the Python/Pandas analysis of the raw BigBasket data. This colab notebook covers data cleaning, handling missing values, duplicate records, inconsistent data, and outliers and also be use for making the plot.
+
